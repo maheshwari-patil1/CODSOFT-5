@@ -1,0 +1,189 @@
+-mahi (master)
+$ git  --version
+git version 2.38.0.windows.1
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi (master)
+$ git clone https://github.com/maheshwari-patil1/GitRepository.git
+Cloning into 'GitRepository'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (6/6), done.
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi (master)
+$ cd GitRepository
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (main)
+$ touch demo.txt
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (main)
+$ touch test.git
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (main)
+$ git add .
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (main)
+$ git  a.txt
+git: 'a.txt' is not a git command. See 'git --help'.
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (main)
+$ touch a.txt
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (main)
+$ touch b.git
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   demo.txt
+        new file:   test.git
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        a.txt
+        b.git
+
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (main)
+$ git add .
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (main)
+$ git add .
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (main)
+$
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (main)
+$ git commit -m "Files are added"
+[main 06985d4] Files are added
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 a.txt
+ create mode 100644 b.git
+ create mode 100644 demo.txt
+ create mode 100644 test.git
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (main)
+$ git branch local
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (main)
+$ git checkout local
+Switched to branch 'local'
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (local)
+$ touch mahi.txt
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (local)
+$ git add .
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (local)
+$ git status
+On branch local
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   mahi.txt
+
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (local)
+$ git add mahi.txt
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (local)
+$ git add .
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (local)
+$ git status
+On branch local
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   mahi.txt
+
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (local)
+$ git status
+On branch local
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   mahi.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)        
+        modified:   README.md
+
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (local)
+$ git add .
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (local)
+$ git commit -m "my file added"
+[local 02491fa] my file added
+ 2 files changed, 1 insertion(+)
+ create mode 100644 mahi.txt
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (local)
+$ git push origin local
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 623 bytes | 623.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'local' on GitHub by visiting:
+remote:      https://github.com/maheshwari-patil1/GitRepository/pull/new/local 
+remote:
+To https://github.com/maheshwari-patil1/GitRepository.git
+ * [new branch]      local -> local
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (local)
+$ git status
+On branch local
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   mahi.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (local)
+$ git push origin local
+Everything up-to-date
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (local)
+$ git add .
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (local)
+$ git push origin local
+Everything up-to-date
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (local)
+$ git commit -m "my files added"
+[local dbec2a3] my files added
+ 1 file changed, 1 insertion(+)
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (local)
+$ git push origin local
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 272 bytes | 272.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/maheshwari-patil1/GitRepository.git
+   02491fa..dbec2a3  local -> local
+
+CDAC@CDACLAB-148 MINGW64 ~/Desktop/Github-mahi/GitRepository (local)
+$
